@@ -1,0 +1,17 @@
+{
+   "background": {
+      "scripts": [ "scripts/background.js" ]
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com https://www.google-analytics.com https://ajax.googleapis.com; object-src 'self' https://ajax.googleapis.com",
+   // "default_locale": "en",
+   // "description": "__MSG_appDescription__",
+   "manifest_version": 2,
+   "name": "Slack Faster",
+   "omnibox": {
+      "keyword": "sf"
+   },
+   "options_page": "options.html",
+   "permissions": [ "notifications", "https://www.google-analytics.com/", "storage", "webRequest", "webRequestBlocking" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1"
+}

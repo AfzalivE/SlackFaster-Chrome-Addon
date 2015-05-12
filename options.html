@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Slack Faster: Options</title>
+        <link rel="stylesheet" href="styles/main.css">
+        
+        <link rel="stylesheet" href="styles/font-awesome.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+      <div class="container dialog menu">
+        <h1>Slack Faster Options</h1>
+        <div class="input-container">
+            <input class="login-input" id="username"/>
+            <label for="username">Username</label>
+        </div>
+        <div class="input-container">
+            <input class="login-input" id="token"/>
+            <label for="token">Token (<a href="https://api.slack.com/web#authentication">Generate a token from here</a>)</label>
+        </div>
+        <div class="input-container">
+            <input class="login-input" id="channel" type="text" list="channellist">
+            <label for="channel">Channel (without #)</label>
+            
+            <datalist id="channellist">
+            </datalist>
+        </div>
+        <div class="input-container">
+            <p id="save">
+                <div class="button raised green" href="#">
+                    <div class="center" fit>SAVE</div>
+                </div>
+            </p>
+        </div>    
+
+    <script src="scripts/options.js"></script>
+
+    </body>
+</html>
